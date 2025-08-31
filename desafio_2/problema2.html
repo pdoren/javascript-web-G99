@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Desafio 2 - Problema 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Problema 2</h1>
+      <p>Puedes llevar hasta 10 stickers.</p>
+    </header>
+
+    <main>
+      <div class="container_stickers">
+        <div class="sticker">
+          <img src="assets/imgs/p2_img1.png" alt="Real Madrid Logo" />
+          <input
+            type="number"
+            id="p2_img1"
+            name="p2_img1"
+            min="0"
+            max="10"
+            class="cantidad_stickers"
+            value="0"
+          />
+        </div>
+
+        <div class="sticker">
+          <img src="assets/imgs/p2_img2.png" alt="Real Madrid Logo" />
+          <input
+            type="number"
+            id="p2_img2"
+            name="p2_img2"
+            min="0"
+            max="10"
+            class="cantidad_stickers"
+            value="0"
+          />
+        </div>
+
+        <div class="sticker">
+          <img src="assets/imgs/p2_img3.png" alt="Real Madrid Logo" />
+          <input
+            type="number"
+            id="p2_img3"
+            name="p2_img3"
+            min="0"
+            max="10"
+            class="cantidad_stickers"
+            value="0"
+          />
+        </div>
+      </div>
+      <p id="p2_mensaje" class="mensaje">&nbsp;</p>
+      <nav>
+        <a id="p2_verificar" class="menu" href="#">Verificar</a>
+      </nav>
+    </main>
+
+    <p>
+      <a href="index.html">← Volver al menú</a>
+    </p>
+
+    <footer>Pablo Saavedra - Curso Javascript Web - G99</footer>
+
+    <script src="assets/js/problema2.js"></script>
+  </body>
+</html>
