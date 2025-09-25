@@ -1,0 +1,120 @@
+:root {
+    --border-color: #c7c7c7;
+    --button-color: rgb(3, 122, 3);
+    --todo-bg-color: rgb(228, 228, 228);
+    --primary-font-color: #1f2328;
+    --primary-bg-color: #f7f7f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial,
+        sans-serif;
+    margin: 0;
+    background: var(--primary-bg-color);
+    color: var(--primary-font-color);
+}
+
+main {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 5px 14px;
+    display: inline-block;
+    background: white;
+    transition: transform 0.05s ease, box-shadow 0.15s ease;
+}
+
+#todo-container {
+    width: 60%;
+    min-width: 600px;
+    background-color: var(--todo-bg-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+hr {
+    border-top: 1px solid var(--border-color);
+    margin-block: 1rem;
+}
+
+#todo-form {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+#name-task {
+    flex-grow: 1;
+}
+
+input,
+select,
+button {
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 8px 8px;
+    display: inline-block;
+    background: white;
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    font-weight: 550;
+}
+
+#resume {
+    margin-block: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+#info {
+    width: 40%;
+}
+
+#details {
+    width: 60%;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+.boton-cruz {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 24px;
+  color: #9e0000;
+  width: 30px; /* Ancho del botón */
+  height: 30px; /* Alto del botón */
+}
+
+.done {
+    background-color: chartreuse;
+}
